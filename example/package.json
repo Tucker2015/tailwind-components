@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "@kevtucker/tailwind-components": "^0.0.1",
     "react-app-polyfill": "^1.0.0"
   },
   "alias": {
