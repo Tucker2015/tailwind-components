@@ -1,8 +1,12 @@
 {
-  "version": "0.0.5",
+  "version": "0.1.1",
+  "name": "@kevtucker/tailwind-components",
+  "author": "Tucker2015",
+  "module": "dist/tailwind-components.esm.js",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -36,9 +40,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@kevtucker/tailwind-components",
-  "author": "Tucker2015",
-  "module": "dist/tailwind-components.esm.js",
   "size-limit": [
     {
       "path": "dist/tailwind-components.cjs.production.min.js",
@@ -62,6 +63,7 @@
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
+    "classnames": "^2.3.2",
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
