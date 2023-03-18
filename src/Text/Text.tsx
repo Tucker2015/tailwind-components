@@ -23,7 +23,7 @@ const Text = ({
     className
   );
 
-  return <p className={classes}>{children}</p>;
+  return <div className={classes}>{children}</div>;
 };
 
 export default Text;
