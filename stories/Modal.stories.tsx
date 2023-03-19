@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Modal, ModalProps } from '../src';
+import { Button, Modal, ModalProps } from '../src';
 
 const meta: Meta = {
   title: 'Layout/Modal',
@@ -62,7 +62,9 @@ const Template: Story<ModalProps> = args => {
 
   return (
     <>
-      <button onClick={handleOpenModal}>Open Modal</button>
+      <Button bgColor="bg-gray-600" onClick={handleOpenModal}>
+        Open Modal
+      </Button>
       <Modal {...args} isOpen={isOpen} onClose={handleCloseModal}>
         <p className="text-sm text-gray-500">
           Are you sure you want to deactivate your account? All of your data

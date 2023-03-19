@@ -13,6 +13,7 @@ export default {
           'text-xs',
           'text-sm',
           'text-base',
+          'text-md',
           'text-lg',
           'text-xl',
           'text-2xl',
