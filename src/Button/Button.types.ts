@@ -6,4 +6,11 @@ export interface ButtonProps {
   glassEffect?: boolean;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
+  /**
+   * Spacing between the button
+   * @default '0'
+   * @example '0.5rem'
+   */
+  spacing?: string;
+  className?: string;
 }

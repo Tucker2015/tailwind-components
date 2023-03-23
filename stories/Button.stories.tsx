@@ -39,8 +39,9 @@ Basic.args = {
 };
 
 export const Glass: Story<ButtonProps> = args => (
-  <div className="flex items-center justify-center min-h-screen background">
+  <div className="flex flex-col items-center justify-center min-h-screen background">
     <Button {...args} />
+    <Button {...args} bgColor="bg-yellow-500" title="This is a Yellow Button" />
   </div>
 );
 Glass.args = {
