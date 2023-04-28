@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Deploying to Verdacchio"
+echo "Deploying to Verdaccio"
 
 # Check for uncommitted changes
 if [[ -n $(git status --porcelain) ]]; then
