@@ -2,6 +2,7 @@ import React, { Fragment, useRef } from 'react';
 import { ModalProps } from './Modal.types';
 import { Dialog, Transition } from '@headlessui/react';
 import { VariantIcon } from './VariantIcon';
+import classNames from 'classnames';
 
 const Modal = ({
   isOpen,
@@ -11,6 +12,7 @@ const Modal = ({
   onAction,
   noButtons,
   variant,
+  bgColor,
   buttonTitle,
 }: ModalProps) => {
   const cancelButtonRef = useRef(null);
@@ -45,8 +47,13 @@ const Modal = ({
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative items-center justify-center overflow-hidden text-center transition-all transform bg-blue-400 rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
-                <div className="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
+              <Dialog.Panel
+                className={classNames(
+                  'relative items-center justify-center overflow-hidden text-center transition-all transform rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg',
+                  bgColor ? bgColor : 'bg-white' // Set the background color
+                )}
+              >
+                <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <VariantIcon variantType={variant} />
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">

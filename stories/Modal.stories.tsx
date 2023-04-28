@@ -11,12 +11,6 @@ const meta: Meta = {
         type: 'text',
       },
     },
-    bgColor: {
-      control: {
-        type: 'string',
-      },
-      defaultValue: 'bg-white',
-    },
     isOpen: {
       control: {
         type: 'boolean',
@@ -66,7 +60,7 @@ const Template: Story<ModalProps> = args => {
         Open Modal
       </Button>
       <Modal {...args} isOpen={isOpen} onClose={handleCloseModal}>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-900">
           Are you sure you want to deactivate your account? All of your data
           will be permanently removed. This action cannot be undone.
         </p>
