@@ -37,6 +37,20 @@ module.exports = {
 
 ## Toast Component Usage
 
+### Add required CSS
+
+```css
+.toast-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+```
+
+### Add the ToastProvider
+
 Inside your \_app.tsx or \_app.js file, wrap your app with the ToastProvider component.
 
 ```tsx
