@@ -993,11 +993,6 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@heroicons/react@1.0.6":
-  version "1.0.6"
-  resolved "https://npm.kevtucker.com/@heroicons/react/-/react-1.0.6.tgz#35dd26987228b39ef2316db3b1245c42eb19e324"
-  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
-
 "@iarna/toml@^2.2.0":
   version "2.2.5"
   resolved "https://npm.kevtucker.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
@@ -1050,13 +1045,6 @@
   dependencies:
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
-
-"@kevtucker/tailwind-components@^0.0.1":
-  version "0.0.1"
-  resolved "https://npm.kevtucker.com/@kevtucker/tailwind-components/-/tailwind-components-0.0.1.tgz#4b6fa7b6f2f838c29c3731627ff910a424575b24"
-  integrity sha512-3pTy0BsOZwYYE+a36qGsv6UdoUFNcTIpJ+GS1qGdveaFzIeXLxLoFI7ZVAub03Fd4w5/WJKFuLSH4fwlFdeh2w==
-  dependencies:
-    "@heroicons/react" "1.0.6"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

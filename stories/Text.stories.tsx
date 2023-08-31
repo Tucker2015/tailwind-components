@@ -49,6 +49,7 @@ const Template: Story<TextProps> = args => <Text {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {
-  color: 'text-red-500',
+  color: 'text-red-900',
+  size: 'md:text-2xl text-sm',
   children: 'This is some text using the default font and color.',
 };
