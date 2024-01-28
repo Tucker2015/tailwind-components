@@ -4,6 +4,7 @@ import { FileInputProps } from './FileInput.types';
 const FileInput = ({
   onChange,
   onButtonClick,
+  showUploadButton = true,
   previewImage,
   onDrop,
   onDragOver,
@@ -53,12 +54,14 @@ const FileInput = ({
           className="hidden"
         />
       </label>
-      <button
-        className="px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600"
-        onClick={onButtonClick}
-      >
-        Upload
-      </button>
+      {showUploadButton && (
+        <button
+          className="px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600"
+          onClick={onButtonClick}
+        >
+          Upload
+        </button>
+      )}
     </div>
   );
 };

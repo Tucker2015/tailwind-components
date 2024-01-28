@@ -4,4 +4,5 @@ export interface FileInputProps {
   previewImage?: string | null;
   onDrop?: any;
   onDragOver?: any;
+  showUploadButton?: boolean;
 }
