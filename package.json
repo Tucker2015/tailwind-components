@@ -1,5 +1,5 @@
 {
-  "version": "0.1.14",
+  "version": "0.1.15",
   "name": "@kevtucker/tailwind-components",
   "author": "Tucker2015",
   "module": "dist/tailwind-components.esm.js",
