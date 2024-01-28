@@ -5,9 +5,15 @@ const FileInput = ({
   onChange,
   onButtonClick,
   previewImage,
+  onDrop,
+  onDragOver,
 }: FileInputProps) => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 space-y-4 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div
+      onDragOver={onDragOver}
+      onDrop={onDrop}
+      className="flex flex-col items-center justify-center p-4 space-y-4 bg-white rounded-lg shadow-lg dark:bg-gray-800"
+    >
       <label
         htmlFor="dropzone-file"
         className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"

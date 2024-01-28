@@ -28,6 +28,21 @@ export const Basic = (args: FileInputProps) => {
 
   return (
     <FileInput
+      onDragOver={(e: { preventDefault: () => void }) => {
+        e.preventDefault(); // Prevent the default behavior
+      }}
+      onDrop={e => {
+        e.preventDefault(); // Prevent the default behavior
+
+        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+          const selectedFile = e.dataTransfer.files[0];
+          setFile(selectedFile);
+
+          // Generate a URL for the file to preview it
+          const imageUrl = URL.createObjectURL(selectedFile);
+          setPreviewImage(imageUrl);
+        }
+      }}
       onChange={onChange}
       onButtonClick={onButtonClick}
       previewImage={previewImage}
